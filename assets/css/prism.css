@@ -1,4 +1,4 @@
-/* http://prismjs.com/download.html?themes=prism-coy&languages=markup+css+clike+javascript+java */
+/* http://prismjs.com/download.html?themes=prism-coy&languages=markup+css+clike+javascript+bash+git+handlebars+java+makefile+python+sql */
 /**
  * prism.js Coy theme for JavaScript, CoffeeScript, CSS and HTML
  * Based on https://github.com/tshedor/workshop-wp-theme (Example: http://workshop.kansan.com/category/sessions/basics or http://workshop.timshedor.com/category/sessions/basics);
@@ -171,6 +171,13 @@ pre[class*="language-"]:after {
 	font-weight: normal;
 }
 
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
 .token.entity {
 	cursor: help;
 }
@@ -210,3 +217,16 @@ pre[class*="language-"].line-numbers .line-numbers-rows {
 	left: 0;
 }
 
+/* Plugin styles: Line Highlight */
+pre[class*="language-"][data-line] {
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+}
+pre[data-line] code {
+	position: relative;
+	padding-left: 4em;
+}
+pre .line-highlight {
+	margin-top: 0;
+}
